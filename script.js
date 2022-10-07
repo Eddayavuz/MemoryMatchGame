@@ -25,6 +25,8 @@ function flipCard(evt) { // take an event object's as a scoped variable
   function matchCards(img1, img2) {
     if (img1 === img2) { // this code will run if the card images match
       matchedPairs++; // if the card images match, we can increment the global `matchedPairs` variable by 1 match
+      cardOne.classList.add("pulse");
+      cardTwo.classList.add("pulse");
       if (matchedPairs == 8) { // if your number of matches is 8, you've made all the matches! Game Won!
           console.log('YOU WIN!');
           return; // for now, lets call this game over, end this function and do nothing else.

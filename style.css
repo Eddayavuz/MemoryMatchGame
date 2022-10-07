@@ -79,6 +79,9 @@
     animation: shake 0.35s ease-in-out;
   }
   
+.card.pulse{
+    animation: pulse 0.35s ease-in-out
+}
 @keyframes shake {
     0%, 100%{
       transform: translateX(0);
@@ -126,3 +129,14 @@
       max-width: 35px;
     }
   }
+  @keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
